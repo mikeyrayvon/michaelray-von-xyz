@@ -10,6 +10,8 @@ Site = {
       _this.onResize();
     });
 
+    _this.Dictionary.init();
+
   },
 
   onResize: function() {
@@ -24,6 +26,39 @@ Site = {
       string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
       $(this).html(string);
     });
+  },
+};
+
+Site.Dictionary = {
+  init: function() {
+    var _this = this;
+
+    _this.dictionary();
+  },
+
+  dictionary: function() {
+    const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+    const list = document.getElementById('dictionary-list');
+    const date = new Date();
+    const year = date.getFullYear();
+    let opacity = 1 - (1 / year);
+    let i;
+    const number = Math.random().toString().substr(2);
+    const letter = alphabet[Math.floor(Math.random() * 26)];
+    let word = '';
+
+    for(l = 0; l < number.length; l++) {
+      word += alphabet[number[l]];
+    }
+
+    for(i = 0; i < year; i++) {
+      let item = document.createElement('li');
+      item.innerHTML = word;
+      list.appendChild(item);
+      item.style.opacity = opacity;
+      opacity -= (1 / year);
+      word += letter;
+    }
   },
 };
 
