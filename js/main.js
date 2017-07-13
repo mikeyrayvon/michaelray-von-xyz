@@ -10,7 +10,7 @@ Site = {
       _this.onResize();
     });
 
-    _this.Dictionary.init();
+    //_this.Dictionary.init();
 
   },
 
