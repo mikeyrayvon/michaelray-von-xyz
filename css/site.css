@@ -763,8 +763,8 @@ a:visited.link-underline {
   text-decoration: underline;
 }
 html {
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
 }
 body {
   overflow-x: hidden;
