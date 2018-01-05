@@ -1085,6 +1085,16 @@ html,
 #dictionary {
   margin-top: -140px;
 }
+#video-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+video {
+  height: 50vh;
+}
 @media screen and (min-width: 720px) {
   .margin-top-micro {
     margin-top: 7px;
@@ -1159,7 +1169,7 @@ html,
     padding-bottom: 105px;
   }
   .container {
-    width: 680px;
+    width: 96%;
   }
   .grid-item {
     padding: 0 10.5px;
@@ -1357,7 +1367,7 @@ html,
 }
 @media screen and (min-width: 1024px) {
   .container {
-    width: 1000px;
+    width: 96%;
   }
   .grid-item {
     padding: 0 12px;
@@ -1625,13 +1635,12 @@ html,
     margin-top: -288px;
   }
 }
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1200px;
-  }
-}
-@media screen and (min-width: 1366px) {
-  .container {
-    width: 1300px;
-  }
-}
+/*
+@media screen and (min-width: 1280px)
+
+  grid(1200px)
+
+@media screen and (min-width: 1366px)
+
+  grid(1300px)
+*/
