@@ -1366,6 +1366,7 @@ video {
   }
   video {
     height: 50vh;
+    width: auto;
   }
 }
 @media screen and (min-width: 1024px) {
