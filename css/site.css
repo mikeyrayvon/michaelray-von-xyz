@@ -1089,6 +1089,7 @@ html,
 video {
   width: 100vw;
   height: auto;
+  max-width: 800px;
 }
 @media screen and (min-width: 720px) {
   .margin-top-micro {
