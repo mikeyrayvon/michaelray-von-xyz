@@ -792,12 +792,6 @@ img {
   left: 0;
   top: 0;
 }
-#dictionary {
-  background-color: #ff1414;
-}
-ol#dictionary-list {
-  list-style-type: decimal;
-}
 .container {
   width: 96%;
 }
@@ -1082,18 +1076,19 @@ html,
 .font-size-micro {
   font-size: 10px;
 }
-#dictionary {
-  margin-top: -140px;
-}
 #video-holder {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 100;
+  mix-blend-mode: screen;
+  pointer-events: none;
 }
 video {
   width: 100vw;
+  height: auto;
 }
 @media screen and (min-width: 720px) {
   .margin-top-micro {
@@ -1361,13 +1356,6 @@ video {
   .mobile-only {
     display: none !important;
   }
-  #dictionary {
-    margin-top: -210px;
-  }
-  video {
-    height: 50vh;
-    width: auto;
-  }
 }
 @media screen and (min-width: 1024px) {
   .container {
@@ -1634,9 +1622,6 @@ video {
   }
   .desktop-only {
     display: initial !important;
-  }
-  #dictionary {
-    margin-top: -288px;
   }
 }
 /*
